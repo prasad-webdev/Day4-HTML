@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
     <title>YouTube.com Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
-      .thumbnail {
-        width: 300px;
-        display: block;
+      body {
+        font-family: Roboto, Arial, sans-serif;
+        margin: 20px;
       }
       .search-bar {
         display: block;
-      }
-      .video-title {
+        margin-bottom: 20px;
+        padding: 8px 12px;
+        font-size: 14px;
         width: 300px;
       }
       .video-preview {
@@ -19,12 +24,33 @@
         vertical-align: top;
         margin-right: 15px;
       }
+      .thumbnail {
+        width: 100%;
+        display: block;
+        border-radius: 8px; 
+      }
+      .video-title {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        margin-top: 10px;
+        margin-bottom: 6px;
+      }
+      .video-author,
+      .video-stats {
+        font-size: 12px;
+        color: rgb(96, 96, 96);
+        margin: 0;
+      }
+      .video-author {
+        margin-bottom: 4px;
+      }
     </style>
   </head>
   <body>
     <input class="search-bar" type="text" placeholder="Search">
     <div class="video-preview">
-      <img class="thumbnail" src="thumbnails/thumbnail-1.jpg">
+      <img class="thumbnail" src="thumbnails/thumbnail-1.jpg" alt="Video thumbnail">
       <p class="video-title">
         Talking Tech and AI with Google CEO Sundar Pichai!
       </p>
@@ -35,8 +61,9 @@
         3.4M views &#183; 6 months ago
       </p>
     </div>
+
     <div class="video-preview">
-      <img class="thumbnail" src="thumbnails/thumbnail-2.jpg">
+      <img class="thumbnail" src="thumbnails/thumbnail-2.jpg" alt="Video thumbnail">
       <p class="video-title">
         Try Not To Laugh Challenge #9
       </p>
